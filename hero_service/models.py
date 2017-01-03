@@ -18,7 +18,8 @@ class HeroBinding(WebsocketBinding):
     stream = 'hero'
     fields = ['__all__']
 
-    def group_names(self, instance, action):
+    @classmethod
+    def group_names(cls, instance, action):
         return ['hero-updates']
 
     def has_permission(self, user, action, pk):
