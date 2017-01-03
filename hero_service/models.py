@@ -1,3 +1,10 @@
 from django.db import models
 
-# Create your models here.
+class Hero(models.Model):
+    """
+    Represents a Hero.
+    """
+    name = models.TextField()
+
+    def __str__(self):
+        return self.name
