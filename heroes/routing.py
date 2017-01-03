@@ -5,6 +5,6 @@ from hero_service.models import HeroBinding
 
 
 channel_routing = [
-    route_class(Demultiplexer, path="^/api/heroes"),
+    route_class(Demultiplexer, path="^/api/ws"),
     route('binding.hero', HeroBinding.consumer),
 ]
