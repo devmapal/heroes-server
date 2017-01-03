@@ -1,0 +1,6 @@
+*.DS_Store
+db.sqlite3
+__pycache__
+*.egg-info
+*.swp
+*.pyc
