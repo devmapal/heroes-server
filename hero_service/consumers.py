@@ -3,8 +3,8 @@ from channels.generic.websockets import WebsocketDemultiplexer
 from . import binding
 
 class Demultiplexer(WebsocketDemultiplexer):
-    mapping = {
-        'hero': binding.HeroBinding,
+    consumers = {
+        'hero': binding.HeroBinding.consumer,
     }
 
     def connection_groups(self):

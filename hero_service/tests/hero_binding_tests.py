@@ -42,7 +42,6 @@ class HeroBindingTests(ChannelTestCase):
             'stream': 'hero',
             'payload': payload,
         })
-        client.consume('binding.hero')
 
         hero.refresh_from_db()
         self.assertEqual(hero.name, 'Still my hero')
